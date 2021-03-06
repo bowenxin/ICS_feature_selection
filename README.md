@@ -3,8 +3,12 @@ To address the challenge of optimally selecting informative, representative, and
 ![Flowchart](https://user-images.githubusercontent.com/10879680/110190303-baca6880-7e76-11eb-8a92-fccc5e5cf2d0.jpg)
 
 
-# Citation for ICS feature selection
+# Citation
+### For ICS feature selection method
 Xin, Bowen, et al. "Integrative Clustering and Supervised Feature Selection for Clinical Applications." 2018 15th International Conference on Control, Automation, Robotics and Vision (ICARCV). IEEE, 2018.
+
+### For machine learning projects of lung cancer survival analysis
+Wang, Linlin, Taotao Dong, Bowen Xin, Chongrui Xu, Meiying Guo, Huaqi Zhang, Dagan Feng, Xiuying Wang, and Jinming Yu. "Integrative nomogram of CT imaging, clinical, and hematological features for survival prediction of patients with locally advanced non-small cell lung cancer." European radiology 29, no. 6 (2019): 2958-2967.
 
 # Prerequisites
 - R environment
