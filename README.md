@@ -8,7 +8,7 @@ Xin, Bowen, et al. "Integrative Clustering and Supervised Feature Selection for 
 
 # Prerequisites
 - R environment
-- packages: dplyr, survival, readxl, xlsx
+- packages: dplyr, survival, randomForestSRC, stats, ConsensusClusterPlus
 
 # Functions
 - Get stable features over repeated meaturements: 
