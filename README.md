@@ -3,9 +3,25 @@ To address the challenge of optimally selecting informative, representative, and
 ![Flowchart](https://user-images.githubusercontent.com/10879680/110190303-baca6880-7e76-11eb-8a92-fccc5e5cf2d0.jpg)
 
 
-# Citatioin for ICS feature selection
+# Citation for ICS feature selection
 Xin, Bowen, et al. "Integrative Clustering and Supervised Feature Selection for Clinical Applications." 2018 15th International Conference on Control, Automation, Robotics and Vision (ICARCV). IEEE, 2018.
 
-# How to use
-- **Prerequisites**: R environment, R packages (dplyr, survival)
-- 
+# Prerequisites
+- R environment
+- packages: dplyr, survival, readxl, xlsx
+
+# Functions
+- Get stable features over repeated meaturements: 
+  `getStableCor_func(df1, df2, threshold=0.7, method="pearson")`
+- Get prognostic features by rank (Cox):
+  `getBestCox(dataset, nFeature=5, rankby="p.value", p.threshold = 0.05)`
+- Get prognostic features by rank (RSF):
+  `getBestRSF(dataset, nFeature, seed = 1000, ntree = 2000)`
+- Get ICS features (Cox):
+  `getBestCluster(dataset, nFeature = 5, maxK = 15, optK = NULL,rankby = "p.value")`
+- Get ICS features (RSF):
+  `getBestCluster2(dataset, nFeature = 5, maxK = 15, optK = NULL,rankby = "p.value")`
+- Fit multivaraite model (Cox):
+  `multi_cox(dataset, features)`
+- Fit multivariate model (RSF):
+  `multi_rsf(dataset, features)`
